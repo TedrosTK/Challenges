@@ -32,13 +32,32 @@
 
 // console.log(calcTime(1100))
 
-function getMax(arr) {
-  let max = arr[0]
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i]
-    }
-  }
-  return max
+// function getMax(arr) {
+//   let max = arr[0]
+//   for (i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i]
+//     }
+//   }
+//   return max
+// }
+// console.log(getMax([1, 2, 3, 4]));
+
+// function reverseString(str) {
+//    return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString('Tedros'))
+
+// function converToZeros(arr) {
+//    newArr = arr.map(element => 0)
+//    return newArr
+// }
+
+// console.log(converToZeros([1,2,3,4]))
+
+function converToBool(arr) {
+  return arr.map(elem => !!elem)
 }
-console.log(getMax([1, 2, 3, 4]));
+
+console.log(converToBool([1,'Apple',2,'']))
