@@ -56,8 +56,27 @@
 
 // console.log(converToZeros([1,2,3,4]))
 
-function converToBool(arr) {
-  return arr.map(elem => !!elem)
+// function converToBool(arr) {
+//   return arr.map(elem => !!elem)
+// }
+
+// console.log(converToBool([1,'Apple',2,'']))
+
+function showRating(rating) {
+  a = "";
+  for (i = 0; i < Math.floor(rating); i++) {
+    if (i < Math.floor(rating) - 1) {
+      a += "* ";
+    } else {
+      a += "*";
+    }
+  }
+
+  if (rating > Math.floor(rating)) {
+    a += " .";
+  }
+
+  return a;
 }
 
-console.log(converToBool([1,'Apple',2,'']))
+console.log(showRating(3.5));
