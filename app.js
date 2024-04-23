@@ -62,21 +62,8 @@
 
 // console.log(converToBool([1,'Apple',2,'']))
 
-function showRating(rating) {
-  a = "";
-  for (i = 0; i < Math.floor(rating); i++) {
-    if (i < Math.floor(rating) - 1) {
-      a += "* ";
-    } else {
-      a += "*";
-    }
-  }
-
-  if (rating > Math.floor(rating)) {
-    a += " .";
-  }
-
-  return a;
+function sortLowToHigh(prices) {
+  return prices.sort((a,b) => - b + a);
 }
 
-console.log(showRating(3.5));
+console.log(sortLowToHigh([4, 9, 2, 9]));
